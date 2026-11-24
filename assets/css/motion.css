@@ -1,0 +1,17 @@
+.back-work{color:#333;text-decoration:none;font:500 14px Geist,Arial,sans-serif}.topinner{gap:18px}.project-dock{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);display:flex;gap:2px;background:#fff;box-shadow:0 6px 30px #0002;border:1px solid #ddd;border-radius:14px;padding:5px;z-index:25}.project-dock a,.project-dock button{width:42px;height:40px;display:grid;place-items:center;border:none;background:transparent;text-decoration:none;color:#111;font:20px Geist,Arial}.project-dock a:nth-child(2){background:#111;color:#d6ff3f;border-radius:9px}.project-dock button{font-size:12px;cursor:pointer}.portfolio-canvas{width:min(1050px,92vw);max-height:87vh;border:1px solid #ccc;border-radius:14px;padding:22px;background-color:#eee;background-image:radial-gradient(#c0c0c0 1px,transparent 1px);background-size:16px 16px}.portfolio-canvas::backdrop{background:#15151580;backdrop-filter:blur(5px)}.portfolio-canvas header{display:flex;justify-content:space-between;align-items:center;margin:0 0 18px;width:auto;height:auto;font:600 20px Geist,Arial}.portfolio-canvas button{border:0;border-radius:18px;padding:8px 14px;cursor:pointer}.boards{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:16px}.boards a{display:block;background:white;padding:8px;color:#111;text-decoration:none;font:13px Geist,Arial}.boards span{display:block;overflow:hidden;margin-top:7px;aspect-ratio:1.58;pointer-events:none}.boards iframe{border:0;width:1240px;height:800px;transform:scale(.22);transform-origin:top left;pointer-events:none}.pointer-fill{pointer-events:none;position:absolute;background:#d6ff3f88;width:300%;aspect-ratio:1;translate:-50% -50%;border-radius:50%;transform:scale(0)}[data-snp-fill]{overflow:hidden}.in-list [data-studio-name="Blob"]{translate:100% 0;transition:translate .23s}.in-list [data-studio-name="List"] p,.in-list [data-studio-name="List"] span{color:white!important}.in-list [data-studio-name="Grid"]>[data-studio-name="Text"] span{color:#111!important}@media(max-width:720px){.topinner{flex-wrap:wrap}.project-dock{bottom:8px}.portfolio-canvas .boards{grid-template-columns:1fr 1fr}.boards iframe{transform:scale(.14)}}
+
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+
+.ink-wordmark > span {
+  color: transparent !important;
+  background-image: linear-gradient(to top, #d6ff3f 50%, #595959 50%);
+  background-size: 100% 205%;
+  background-position: center top;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: background-position 420ms cubic-bezier(.22,.68,.25,1) var(--delay,0ms) !important;
+}
+.ink-wordmark:is(:hover,:focus-visible) > span { background-position: center bottom; }
+.ink-wordmark:focus-visible { outline: 1px solid #d6ff3f; outline-offset: 4px; }
+@media(prefers-reduced-motion:reduce){.ink-wordmark > span{transition:none!important}}
+
